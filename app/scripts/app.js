@@ -15,13 +15,13 @@
                 url: '/album',
                 templateUrl: '/templates/album.html'
             })
-            .state('collections', {
+            .state('collection', {
                 url: '/collection',
                 templateUrl: '/templates/collection.html'
             });
     }
     
-     angular
-         .module('blocJams', ['ui.router'])
-         .config(config);
+    angular
+        .module('blocJams', ['ui.router'])
+        .config(config);
 })();
