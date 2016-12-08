@@ -41,7 +41,7 @@
 
 .song-item-number {
     width: 5%;
-    min-width: 30px; /*Without a minimum width, the cell has the potential to become                  smaller in width than the size of the button.*/
+    min-width: 30px; 
 }
 
 .song-item-title {
@@ -73,7 +73,6 @@
     line-height: 28px;
 }
 
-/* Centered text looks better on smaller devices */
 @media (max-width: 640px) and (min-width: 320px) {
     .album-view-details {
         text-align: center;
@@ -82,6 +81,7 @@
         margin-top: 0;
     }
 }
+
 @media (max-width: 1024px) and (min-width: 320px) {
     .album-view-song-list {
         position: relative;
