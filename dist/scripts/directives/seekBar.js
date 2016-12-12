@@ -22,12 +22,12 @@
                 
                 var seekBar = $(element);
                 
-                attributes.$observe('value', function(newValue) {
-                    scope.value = newValue;
+                attributes.$observe('val', function(newVal) {
+                    scope.value = newVal;
                 });
  
-                attributes.$observe('max', function(newValue) {
-                    scope.max = newValue;
+                attributes.$observe('max', function(newVal) {
+                    scope.max = newVal;
                 });
  
                 var percentString = function () {
@@ -61,9 +61,9 @@
                         });
                     });
                     
-                    var notifyOnChange = function(newValue) {
+                    var notifyOnChange = function(newVal) {
                         if (typeof scope.onChange === 'function') {
-                            scope.onChange({value: newValue});
+                            scope.onChange({val: newVal});
                         }
                     };
  
